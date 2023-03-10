@@ -1,9 +1,6 @@
 # APLIKASI WEB PSB SMA DIGITALENT
 
 Author - I Gede Arya Danny Pratama
-Created : 06/03/2023
-Updated : 09/03/2023
-Version : v2
 About : Pelatihan dan Sertifikasi Junior Web Developer 2023
 ===========================================================
 
