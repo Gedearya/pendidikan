@@ -1,6 +1,6 @@
 # APLIKASI WEB PSB SMA DIGITALENT
 
-WEB untuk Penerimaan Siswa Baru Digitalelnt - VSGA 2023. Pelatihan dan Sertifikasi Junior Web Developer 2023
+Web untuk Penerimaan Siswa Baru Digitalelnt - VSGA 2023. Hasil belajar dari Pelatihan dan Sertifikasi Junior Web Developer 2023
 
 ## Jenis Aplikasi
 
@@ -27,6 +27,26 @@ Read, Update, Delete
 Detail
 ![5](https://user-images.githubusercontent.com/75374189/224322486-97aa6b28-43a7-4d65-9ae6-0eb8b7860a76.png)
 
+
+## ALur Aplikasi Web
+
+Siswa <br>
+1. Siswa masuk ke Homepage
+2. Siswa mendaftar akun baru
+3. Siswa login ke Homepage
+4. Siswa melakukan Pendaftaran
+5. Status pendaftaran di terima (Pending)
+6. Siswa melakukan Logout Akun
+
+Admin <br>
+1. Admin Login ke Homepage
+2. Admin bisa melakukan Pendaftaran siswa
+3. Admin bisa melihat jumlah / data Pendaftar
+4. Admin dapat melakukan edit / update data Pendaftar
+5. Admin bisa merubah status Pendaftaran dari (Pending) menjadi (Diterima/Ditolak)
+6. Admin melakukan Logout Akun
+
+
 ## Requirement
 
 CSS & JS
@@ -35,7 +55,7 @@ CSS & JS
 
 - Datables : https://datatables.net/
 
-Programing Leanguage
+Programing Language
 
 - PHP v8.2.0 : http://www.php.net/
 
@@ -46,5 +66,4 @@ Database
 WEB SERVER
 
 - XAMPP Version 3.3.0 64bit : http://www.wampserver.com/en/
-
 
