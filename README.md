@@ -1,7 +1,7 @@
 # APLIKASI WEB PSB SMA DIGITALENT
 
-Author - I Gede Arya Danny Pratama
-About : Pelatihan dan Sertifikasi Junior Web Developer 2023
+-Author - I Gede Arya Danny Pratama
+-About : Pelatihan dan Sertifikasi Junior Web Developer 2023
 
 CSS & JS
 -Bootstrap : https://getbootstrap.com/
