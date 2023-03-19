@@ -1,11 +1,5 @@
 <?php
 require 'config/config.php';
-
-// if (!isset($_SESSION['admin'])) {
-//     echo "<script>alert('Anda Harus Login');</script>";
-//     echo "<script>location='login.php';</script>";
-//     exit();
-// }
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +30,6 @@ require 'config/config.php';
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3795BD;">
             <div class=" container">
-                <!-- <a class="navbar-brand" href="index.php">
-                    <img src="https://balitbangsdm.kominfo.go.id/upt/makassar/uploads/pages/20220525062518-Logo-Kominfo.png" width="35" height="35" alt="">
-                </a> -->
                 <img src="https://balitbangsdm.kominfo.go.id/upt/makassar/uploads/pages/20220525062518-Logo-Kominfo.png" width="35" height="35" alt="" class="mr-2">
                 <a class="navbar-brand pr-2 pl-2" href="index.php" style="font-size: 22px;">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,10 +57,6 @@ require 'config/config.php';
                             <a class="nav-link ml-2" href="?halaman=tampilSiswa" style="font-size: 20px;">Data Siswa <span class="sr-only">(current)</span></a>
                         </li></html>';
                         } ?>
-
-                        <!-- <li class="nav-item active">
-                            <a class="nav-link" href="?halaman=tambahNilai">Tambah Nilai <span class="sr-only">(current)</span></a>
-                        </li> -->
                     </ul>
                     <div class="nav-item my-2 my-lg-0 text-white">
                         <label style="font-size: 20px;">
@@ -88,7 +75,7 @@ require 'config/config.php';
                         } else {
                             echo '<html><a href="logout.php" class="btn btn-warning my-2 my-sm-0 ml-3" style="font-size: 18px;">Logout</a></html>';
                         } ?>
-                        <!-- <a href="logout.php" class="btn btn-warning my-2 my-sm-0 ml-3">Logout</a> -->
+                        
                     </div>
                 </div>
 
@@ -119,24 +106,6 @@ require 'config/config.php';
                     include 'pages/siswa_hapus.php';
                     break;
 
-                    //Matakuliah
-                    // case 'tampilMatkul':
-                    //     include 'data/matkul/matkul_tampil.php';
-                    //     break;
-                    // case 'tambahMatkul':
-                    //     include 'data/matkul/matkul_tambah.php';
-                    //     break;
-                    // case 'editMatkul':
-                    //     include 'data/matkul/matkul_edit.php';
-                    //     break;
-                    // case 'hapusMatkul':
-                    //     include 'data/matkul/matkul_hapus.php';
-                    //     break;
-
-
-                    // case 'tambahNilai':
-                    //     include 'data/nilai/nilai_tambah.php';
-                    //     break;
 
                 default:
             ?>
@@ -145,9 +114,7 @@ require 'config/config.php';
                         <?php
                         $data_siswa = $conn->query("SELECT * FROM tb_siswa");
                         $jumlah_siswa = mysqli_num_rows($data_siswa);
-                        // echo $jumlah_siswa;
-
-                        // <h4>Ayo Raih Impian-mu bersama SMA Digitalent</h4>
+                       
 
                         if (isset($_SESSION['admin'])) {
                             echo "<h3>Selamat Datang, Admin</h3>
@@ -162,13 +129,7 @@ require 'config/config.php';
 
 
 
-                        // if (!isset($_SESSION['admin'])) {
-                        //     echo "<h3>Selamat Datang, Calon Siswa Baru</h3>
-                        //     <h5>Silahkan <span style='font-weight:bold'><a href='register_siswa.php'>Buat Akun </a></span>terlebih dahulu. Ayo Raih Impian-mu bersama SMA Digitalent</h5>";
-                        // } else {
-                        //     echo "<h3>Selamat Datang, Admin</h3>
-                        //     <h5>Jumlah Pendaftar saat ini : <span style='color: blue; font-weight:bold'>$jumlah_siswa Calon Siswa Baru</span></h5>";
-                        // } 
+                     
                         ?>
 
 
